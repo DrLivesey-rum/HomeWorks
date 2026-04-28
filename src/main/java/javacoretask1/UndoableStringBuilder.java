@@ -68,8 +68,8 @@ public class UndoableStringBuilder {
             return false;
         }
         BuilderSnapshot snapshot = history.pop();
-        this.value = snapshot.getValueCopy();
-        this.count = snapshot.getCount();
+        this.value = snapshot.valueCopy();
+        this.count = snapshot.count();
         return true;
     }
 

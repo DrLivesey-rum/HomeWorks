@@ -1,20 +1,9 @@
 package javacoretask1;
 
-final class BuilderSnapshot {
-    private final char[] valueCopy;
-    private final int count;
-
-    BuilderSnapshot(char[] value, int count) {
-        this.valueCopy = new char[value.length];
-        System.arraycopy(value, 0, this.valueCopy, 0, value.length);
+record BuilderSnapshot(char[] valueCopy, int count) {
+    BuilderSnapshot(char[] valueCopy, int count) {
+        this.valueCopy = new char[valueCopy.length];
+        System.arraycopy(valueCopy, 0, this.valueCopy, 0, valueCopy.length);
         this.count = count;
-    }
-
-    char[] getValueCopy() {
-        return valueCopy;
-    }
-
-    int getCount() {
-        return count;
     }
 }
