@@ -1,4 +1,4 @@
-package javacollectiontask2;
+package javacollectiontask1;
 
 public record Person(String name, int age) {
 

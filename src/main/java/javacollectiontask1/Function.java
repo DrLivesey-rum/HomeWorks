@@ -1,4 +1,4 @@
-package javacollectiontask2;
+package javacollectiontask1;
 
 @FunctionalInterface
 public interface Function <T> {
